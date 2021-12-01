@@ -10,16 +10,15 @@ from datetime import datetime
 
 f = open('market-cap.json')
 
-#interval = list(range(x-30
-
-# cito i dati
 data = json.load(f)
 
+# definisco anno-mese-giorno 
 def day(n):
     date = data['values'][0]['x']
     fixeddate = datetime.fromtimestamp(date)
     #print(fixeddate)
 
+# suddivido elementi
 for data in day(n):
     el = fixeddate.split('-')
     fixedyear = int(el[0])
