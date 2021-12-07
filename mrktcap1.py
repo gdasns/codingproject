@@ -64,8 +64,3 @@ plt.xticks(rotation = 90)
 onemonth = 60*60*24*30
 
 
-for i in range(0, 10):
-    for ['values'][i] in xs:
-        print(average(['values'][i]))
-
-
