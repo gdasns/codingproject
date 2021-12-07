@@ -7,7 +7,7 @@ Created on Tue Dec  7 16:21:45 2021
 
 import json
 from datetime import datetime
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
     
 def average(n):
     total = 0
@@ -19,16 +19,12 @@ def average(n):
     return avg
 
 def smooth(x):
-    # create a list
-    newlist = []
-    
     # evaluate interval in which calculate the mean
     interval = range((x - onemonth),(x + onemonth))
     for el in interval:
-        newlist.append(average(el))
-    return newlist
-
+        return average(el)
     
+
 f = open('market-cap.json')
 
 
@@ -62,5 +58,8 @@ fig.autofmt_xdate()
 plt.xticks(rotation = 90)
 
 onemonth = 60*60*24*30
+
+for x > onemonth and x < [lasttimestamp - onemonth] in xs:
+    smooth(x)
 
 
