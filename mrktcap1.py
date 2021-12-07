@@ -58,8 +58,6 @@ fig.autofmt_xdate()
 plt.xticks(rotation = 90)
 
 onemonth = 60*60*24*30
+lastvalue = lasttimestamp - onemonth
 
-for x > onemonth and x < [lasttimestamp - onemonth] in xs:
-    smooth(x)
-
-
+smoothlist = [smooth(x) for x in xs if x > onemonth and x < lastvalue]
